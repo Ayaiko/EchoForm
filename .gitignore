@@ -57,3 +57,14 @@ yarn-error.log*
 temp/
 
 game-concept.md
+
+# Godot 4+ generated files
+.godot/
+*.import
+export/
+exports/
+
+# Optional platform/export folders
+/android/
+/ios/
+/web/

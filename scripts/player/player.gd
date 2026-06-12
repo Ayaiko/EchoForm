@@ -27,6 +27,15 @@ var _is_sprinting: bool = false
 func _ready() -> void:
 	hp = max_hp
 	stamina = max_stamina
+	# Placeholder rectangle — remove when real sprites are ready
+	var poly = $Polygon2D
+	poly.polygon = PackedVector2Array([
+		Vector2(-6, -8),
+		Vector2(6, -8),
+		Vector2(6, 8),
+		Vector2(-6, 8)
+	])
+	poly.color = Color(0.3, 0.7, 1.0)  # light blue
 
 func _physics_process(delta: float) -> void:
 	if is_dead:

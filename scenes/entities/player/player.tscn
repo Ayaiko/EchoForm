@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dcyq7l66vy27d"]
+
+[ext_resource type="Script" uid="uid://b70fyg806mcws" path="res://scripts/player/player.gd" id="1_1hmtu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_635qg"]
+size = Vector2(12, 16)
+
+[node name="Player" type="CharacterBody2D" unique_id=1193490308]
+script = ExtResource("1_1hmtu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=358064141]
+shape = SubResource("RectangleShape2D_635qg")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=370652729]
